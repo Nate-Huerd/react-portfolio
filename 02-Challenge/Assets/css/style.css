@@ -1,0 +1,57 @@
+:root {
+    --header-color: red;
+}
+/* This css variable does not work.
+Also use flexbox*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: maroon;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+}
+
+.headers {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: var(--header-color);
+}
+
+* h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.image {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    border: 5px solid black;
+}
+
+
+/* These are for a responsive layout */
+/* The 50% makes it a two-column format */
+@media screen and (max-width: 900px) {
+    .image {
+        width: 50%;
+    }
+}
+
+/* The 100% makes the two columns stack, rather than having them side-by-side */
+@media screen and (max-width: 600px){
+    .image {
+        width: 100%;
+    }
+}
