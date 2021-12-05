@@ -1,5 +1,7 @@
 :root {
-    --header-color: red;
+    --header-color: black;
+    --main-color: #2a607c;
+    --font-fam: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* This css variable does not work.
 Also use flexbox*/
@@ -8,8 +10,8 @@ Also use flexbox*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: maroon;
+    font-family: var(--font-fam);
+    background-color: maroon transparent;
 }
 
 body {
@@ -18,8 +20,8 @@ body {
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    font-family: var(--font-fam);
+    background-color: var(--main-color);
 }
 
 .headers {
