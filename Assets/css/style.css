@@ -8,6 +8,7 @@ Also use flexbox*/
 
 * {
     background-color: var(--main-color);
+    position: relative;
 }
 
 p {
@@ -21,7 +22,6 @@ p {
 .images {
     flex-direction: column-reverse;
     justify-content: space-evenly;
-    position: relative;
 }
 
 /* These are for a responsive layout */
